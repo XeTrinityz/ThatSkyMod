@@ -24,16 +24,16 @@ TSM, or That Sky Mod, was created with the ultimate goal of being the only mod y
 - **Comprehensive Functionality:** From gameplay enhancements to aesthetic modifications, TSM covers a wide spectrum of features to enrich your Sky experience.
 
 ### Contributors
-- Lukas
-- TheSR
-- Basem
-- Dark Linus
-- Not Not
-- Rein
-- Samual Grey
-- Parssiffal
-- Goth
-- It's Dawn
-- i_umindra
-- The Cat
-- Cotton
+- Lukas - Research & SML
+- TheSR - TSM Foundation & Original Founder
+- Basem - Development
+- Dark Linux - Development
+- Samual Grey - Teleport Locations
+- Not Not - Teleport Locations
+- Rein - Testing
+- Parssiffal - Testing
+- Goth - Testing
+- It's Dawn - Testing
+- i_umindra - Testing
+- The Cat - Testing
+- Cotton - Testing
