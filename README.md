@@ -22,3 +22,18 @@ TSM, or That Sky Mod, was created with the ultimate goal of being the only mod y
 ### Key Features:
 - **User-Friendly Interface:** Designed with simplicity and usability in mind, the TSM interface allows both novice and experienced users to easily access and configure various mod features.
 - **Comprehensive Functionality:** From gameplay enhancements to aesthetic modifications, TSM covers a wide spectrum of features to enrich your Sky experience.
+
+### Contributors
+- Lukas
+- TheSR
+- Basem
+- Dark Linus
+- Not Not
+- Rein
+- Samual Grey
+- Parssiffal
+- Goth
+- It's Dawn
+- i_umindra
+- The Cat
+- Cotton
