@@ -25,10 +25,11 @@ TSM, or That Sky Mod, was created with the ultimate goal of being the only mod y
 
 ### Contributors
 - TheSR - TSM Founder & Development Contributions
-- Lukas - SML Developer
+- Lukas - SML Developer & Development Contributions
 - Basem - Development Contributions
 - Dark Linux - Development Contributions
 - Samual Grey - Community Contributions
+- MikeyK - Community Contributions
 - Not Not - Community Contributions
 - Rein - Tester
 - Parssiffal - Tester
@@ -37,4 +38,3 @@ TSM, or That Sky Mod, was created with the ultimate goal of being the only mod y
 - i_umindra - Tester
 - The Cat - Tester
 - Cotton - Tester
-- MikeyK - Tester
