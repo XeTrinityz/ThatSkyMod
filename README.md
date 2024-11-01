@@ -24,7 +24,8 @@ TSM, or That Sky Mod, was created with the ultimate goal of being the only mod y
 - **Comprehensive Functionality:** From gameplay enhancements to aesthetic modifications, TSM covers a wide spectrum of features to enrich your Sky experience.
 
 ### Contributors
-- TheSR - TSM Founder & Development Contributions
+- XeTrinityz - TSM Creator & Current Developer
+- TheSR - TSM Creator & Development Contributions
 - Lukas - SML Developer & Development Contributions
 - Basem - Development Contributions
 - Dark Linux - Development Contributions
