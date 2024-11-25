@@ -12,7 +12,7 @@
   </p>
 
   <!-- SOFTWARE IMAGE -->
-  <img src="https://i.imgur.com/T1MobsX.png" alt="TSM Menu">
+  <img src="https://i.imgur.com/Qo0N44G.png" alt="TSM Menu">
 </div>
 
 ## About The Project
