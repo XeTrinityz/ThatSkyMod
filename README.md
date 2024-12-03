@@ -27,7 +27,7 @@ TSM, or That Sky Mod, was created with the ultimate goal of being the only mod y
   
 ## Contributors
 
-### Current Developer & Maintainer
+### Developer
 XeTrinityz
 
 ### Project Founder
