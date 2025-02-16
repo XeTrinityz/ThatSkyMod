@@ -10,7 +10,6 @@ const GradientCustomizer = () => {
   });
 
   useEffect(() => {
-    // Update the background gradient whenever colors change
     updateGradient(colors);
   }, [colors]);
 
