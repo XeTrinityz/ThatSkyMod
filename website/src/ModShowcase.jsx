@@ -1,5 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Download, Sparkles } from 'lucide-react';
+import playerImage from './assets/TSM_Player.png'
+import progressionImage from './assets/TSM_Progression.png'
+import dyesImage from './assets/TSM_Dyes.png'
+import worldImage from './assets/TSM_World.png'
 
 const InteractiveCard = ({ feature }) => {
   const cardRef = useRef(null);
@@ -137,22 +141,22 @@ const ModShowcase = () => {
         {
             title: "Player Controls & Movement",
             description: "Enhanced gameplay with Godmode, infinite stamina, super abilities (run, jump, swim, flight), and protection features like anti-rain damage and anti-AFK. Access special states and transformations for unique gameplay experiences.",
-            image: "src/assets/TSM_Player.png"
+            image: playerImage
         },
         {
             title: "Automated Candle Collection",
             description: "Streamline your candle runs with automated tools including auto burn candles, auto collect wax, auto burn plants, and fragment collection. Features semi-CR with customizable delays and sequence controls for efficient farming.",
-            image: "src/assets/TSM_Progression.png"
+            image: progressionImage
         },
         {
             title: "Advanced Dye Customization",
             description: "Complete control over your character's appearance with an extensive dye system. Choose from a wide color palette for primary and secondary regions as well as options to randomize or remove dyes.",
-            image: "src/assets/TSM_Dyes.png"
+            image: dyesImage
         },
         {
             title: "Environment & Gameplay Controls",
             description: "Comprehensive control over your game environment with options to disable wind walls, gravity, water, and clouds. Fine-tune gameplay elements with quick actions, multiplayer controls, and custom environment settings.",
-            image: "src/assets/TSM_World.png"
+            image: worldImage
         }
     ];
 
