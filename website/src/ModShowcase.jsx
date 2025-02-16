@@ -135,22 +135,43 @@ const ModShowcase = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-950 via-purple-900 to-black text-white overflow-hidden">
-      {/* Animated Background */}
-      <div className="fixed inset-0 opacity-20">
-        {[...Array(50)].map((_, i) => (
+      {/* Sparkle Background */}
+      <div className="fixed inset-0 pointer-events-none">
+        {[...Array(100)].map((_, i) => (
           <div
             key={i}
             className="absolute rounded-full bg-white"
             style={{
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,
-              width: `${Math.random() * 4}px`,
-              height: `${Math.random() * 4}px`,
-              animation: `twinkle ${Math.random() * 4 + 2}s infinite`
+              width: `${Math.random() * 5 + 2}px`,
+              height: `${Math.random() * 5 + 2}px`,
+              animation: `
+                fadeIn 1.5s ease-out ${i * 0.05}s forwards,
+                twinkle ${Math.random() * 4 + 2}s ease-in-out ${Math.random() * 2}s infinite,
+                drift ${Math.random() * 6 + 4}s ease-in-out ${Math.random() * 2}s infinite
+              `,
+              opacity: 0, // Important for initial state
             }}
           />
         ))}
       </div>
+
+      <style jsx>{`
+        @keyframes fadeIn {
+          0% { opacity: 0; transform: scale(0.5); }
+          100% { opacity: 1; transform: scale(1); }
+        }
+        @keyframes twinkle {
+          0%, 100% { opacity: 0.3; transform: scale(0.9); }
+          50% { opacity: 1; transform: scale(1.1); }
+        }
+        @keyframes drift {
+          0% { transform: translateY(0) translateX(0); }
+          50% { transform: translateY(-10px) translateX(5px); }
+          100% { transform: translateY(0) translateX(0); }
+        }
+      `}</style>
 
       {/* Hero Section */}
       <header className="relative py-16 flex items-center justify-center">
