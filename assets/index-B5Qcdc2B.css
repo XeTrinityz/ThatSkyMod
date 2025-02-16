@@ -1,1 +1,0 @@
-@tailwind base;@tailwind components;@tailwind utilities;@keyframes twinkle{0%,to{opacity:0}50%{opacity:1}}body{margin:0;padding:0;background:linear-gradient(to bottom,#172554,#581c87,#000);min-height:100vh}#root{min-height:100vh}
