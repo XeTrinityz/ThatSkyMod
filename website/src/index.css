@@ -179,8 +179,13 @@ body {
   padding: 0;
   background: linear-gradient(to bottom, #172554, #581c87, #000000);
   min-height: 100vh;
+  min-height: -webkit-fill-available;
+  overflow-x: hidden;
 }
 
 #root {
   min-height: 100vh;
+  min-height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
 }

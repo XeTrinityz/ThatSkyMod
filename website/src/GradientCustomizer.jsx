@@ -109,7 +109,7 @@ const GradientCustomizer = () => {
       via: '#581c87',
       to: '#000000'
     });
-    setSelectedAnimation('sparkle');
+    setSelectedAnimation('starfield');
   };
 
   return (
