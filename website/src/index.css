@@ -1,10 +1,179 @@
 @import 'tailwindcss';
 
-@keyframes twinkle {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
+/* Base sparkle animations */
+@keyframes sparkleFloat0 { 
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(10px, -15px) rotate(180deg);
+  }
+  50% {
+    transform: translate(-5px, 20px) rotate(360deg);
+  }
+  75% {
+    transform: translate(15px, 5px) rotate(540deg);
+  }
 }
 
+@keyframes sparkleFloat1 { 
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(15px, -20px) rotate(180deg);
+  }
+  50% {
+    transform: translate(-10px, 25px) rotate(360deg);
+  }
+  75% {
+    transform: translate(20px, 10px) rotate(540deg);
+  }
+}
+
+@keyframes sparkleFloat2 { 
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(20px, -10px) rotate(180deg);
+  }
+  50% {
+    transform: translate(-15px, 15px) rotate(360deg);
+  }
+  75% {
+    transform: translate(10px, 20px) rotate(540deg);
+  }
+}
+
+@keyframes sparkleGlow {
+  0%, 100% { 
+    filter: brightness(1); 
+  }
+  50% { 
+    filter: brightness(1.5); 
+  }
+}
+
+@keyframes sparklePulse {
+  0%, 100% { 
+    opacity: 0.2; 
+    transform: scale(0.8); 
+  }
+  50% { 
+    opacity: 1; 
+    transform: scale(1.2); 
+  }
+}
+
+/* Fireflies animation */
+@keyframes fireflies {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.5) translate(0, 0);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1.2) translate(10px, -10px);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(0.8) translate(20px, -20px);
+  }
+  75% {
+    opacity: 0.8;
+    transform: scale(1) translate(10px, -30px);
+  }
+}
+
+/* Cosmic rain animation */
+@keyframes raindrops {
+  0% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* Energy particles animation */
+@keyframes energyParticles {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.5;
+  }
+  25% {
+    transform: scale(1.5) rotate(90deg) translate(20px, -20px);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1) rotate(180deg) translate(-20px, 20px);
+    opacity: 0.7;
+  }
+  75% {
+    transform: scale(0.5) rotate(270deg) translate(20px, 20px);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+    opacity: 0.5;
+  }
+}
+
+/* Starfield animation */
+@keyframes starfield {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg) translateX(200px) rotate(-180deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    opacity: 0;
+  }
+}
+
+/* Crystal shimmer animation */
+@keyframes crystalShimmer {
+  0%, 100% {
+    transform: scale(1) skew(0deg);
+    opacity: 0.3;
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    transform: scale(1.2) skew(5deg);
+    opacity: 0.8;
+    filter: hue-rotate(90deg);
+  }
+  75% {
+    transform: scale(0.8) skew(-5deg);
+    opacity: 0.6;
+    filter: hue-rotate(180deg);
+  }
+}
+
+/* Title gradient animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* Base styles */
 body {
   margin: 0;
   padding: 0;
