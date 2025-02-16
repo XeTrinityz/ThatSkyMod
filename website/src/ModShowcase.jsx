@@ -141,39 +141,47 @@ const ModShowcase = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-950 via-purple-900 to-black text-white">
+      <div className="min-h-[100dvh] bg-gradient-to-b from-blue-950 via-purple-900 to-black text-white">
       <div className="min-h-screen flex flex-col">
-      {/* Background Animation Elements */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        {[...Array(window.innerWidth < 768 ? 50 : 150)].map((_, i) => {
-          const size = Math.random() * (window.innerWidth < 768 ? 2 : 4) + 1;
-          const startX = Math.random() * 120 - 10;
-          const startY = Math.random() * 120 - 10;
-          const hue = Math.random() * 60 + 200;
-          const saturation = Math.random() * 30 + 70;
-          const lightness = Math.random() * 30 + 70;
-          const color = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+        {/* Enhanced Sparkle Background */}
+        <div className="fixed inset-0 pointer-events-none overflow-hidden">
+          {[...Array(150)].map((_, i) => {
+            const size = Math.random() * 4 + 1;
+            const duration = Math.random() * 8 + 4;
+            const delay = Math.random() * 5;
+            const sparkleType = Math.floor(Math.random() * 3);
+            
+            const hue = Math.random() * 60 + 200;
+            const saturation = Math.random() * 30 + 70;
+            const lightness = Math.random() * 30 + 70;
+            const color = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+            
+            const startX = Math.random() * 120 - 10;
+            const startY = Math.random() * 120 - 10;
 
-          return (
-            <div
-              key={i}
-              className="absolute background-element will-change-transform"
-              style={{
-                width: `${size}px`,
-                height: `${size}px`,
-                left: `${startX}%`,
-                top: `${startY}%`,
-                background: Math.random() > 0.66 ? color : 'transparent',
-                transform: Math.random() > 0.66 ? 'rotate(45deg)' : 'none',
-                boxShadow: `0 0 ${size * 2}px ${color}`,
-                borderRadius: Math.random() > 0.66 ? '50%' : '0',
-                border: Math.random() > 0.66 ? `1px solid ${color}` : 'none',
-                animation: `starfield ${Math.random() * 10 + 8}s linear infinite`,
-                contain: 'layout style paint'
-              }}
-            />
-          );
-        })}
+            return (
+              <div
+                key={i}
+                className="absolute"
+                style={{
+                  width: `${size}px`,
+                  height: `${size}px`,
+                  left: `${startX}%`,
+                  top: `${startY}%`,
+                  background: sparkleType === 1 ? color : 'transparent',
+                  transform: sparkleType === 2 ? 'rotate(45deg)' : 'none',
+                  boxShadow: `0 0 ${size * 2}px ${color}`,
+                  borderRadius: sparkleType === 1 ? '50%' : '0',
+                  border: sparkleType !== 1 ? `1px solid ${color}` : 'none',
+                  animation: `
+                    sparkleFloat${i} ${duration}s ease-in-out ${delay}s infinite,
+                    sparklePulse ${duration / 2}s ease-in-out ${delay}s infinite,
+                    sparkleGlow ${duration / 3}s ease-in-out ${delay}s infinite
+                  `,
+                }}
+              />
+            );
+          })}
         </div>
 
         {/* Hero Section */}
