@@ -20,7 +20,7 @@ export const GitHubButton = ({ stars = 6, repoUrl = "https://github.com/XeTrinit
   return (
     <button 
       onClick={() => window.open(repoUrl, '_blank')}
-      className="flex overflow-hidden items-center text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-white shadow hover:bg-black/90 h-9 px-4 py-2 max-w-52 whitespace-pre md:flex group relative mx-auto mt-4 justify-center gap-2 rounded-full cursor-pointer transition-all duration-300 ease-out hover:ring-2 hover:ring-white/20 hover:ring-offset-2 hover:ring-offset-black">
+      className="flex overflow-hidden items-center text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-[#1d1d1f] text-white shadow hover:bg-[#1d1d1f]/90 h-9 px-4 py-2 max-w-52 whitespace-pre md:flex group relative mx-auto mt-4 justify-center gap-2 rounded-full cursor-pointer transition-all duration-300 ease-out hover:ring-2 hover:ring-white/20 hover:ring-offset-2 hover:ring-offset-black">
       <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-40" />
       <div className="flex items-center">
         <svg className="w-4 h-4 fill-current" viewBox="0 0 438.549 438.549">
@@ -38,8 +38,76 @@ export const GitHubButton = ({ stars = 6, repoUrl = "https://github.com/XeTrinit
   );
 };
 
+export const DiscordButton = () => {
+  return (
+    <div className="fixed bottom-4 right-[88px] z-50">
+      <div className="tooltip-container relative cursor-pointer text-base">
+        <div className="tooltip absolute left-1/2 -translate-x-1/2 opacity-0 pointer-events-none transition-all duration-300 z-10 p-[1px] rounded-lg bg-gradient-to-r from-blue-500 to-purple-500">
+          <div className="bg-[#1d1d1f] rounded-lg p-4 min-w-[200px]">
+            <div className="text-center">
+              <div className="text-lg font-bold text-white mb-1">That Sky Mod</div>
+              <div className="text-gray-400">3611+ Members</div>
+            </div>
+          </div>
+        </div>
+        <a className="icon text-white block relative" href="https://discord.gg/ThatSkyMod">
+          <div className="layer w-12 h-12 transition-transform duration-300">
+            <span className="absolute top-0 left-0 h-full w-full rounded-full transition-all duration-300 bg-gradient-to-r from-blue-500 to-purple-500"></span>
+            <span className="absolute top-0 left-0 h-full w-full rounded-full transition-all duration-300 bg-gradient-to-r from-blue-500 to-purple-500"></span>
+            <span className="absolute top-0 left-0 h-full w-full rounded-full transition-all duration-300 bg-gradient-to-r from-blue-500 to-purple-500"></span>
+            <span className="absolute top-0 left-0 h-full w-full rounded-full transition-all duration-300 bg-gradient-to-r from-blue-500 to-purple-500"></span>
+            <span className="absolute top-0 left-0 h-full w-full rounded-full transition-all duration-300 bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center">
+              <svg className="w-6 h-6 fill-white" viewBox="0 0 640 512">
+                <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.836a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+      </div>
+      <style jsx>{`
+        .tooltip-container:hover .tooltip {
+          top: -140px;
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+        }
+        .tooltip {
+          top: -140px;
+          visibility: hidden;
+        }
+        .icon:hover .layer {
+          transform: rotate(-35deg) skew(20deg);
+        }
+        .icon:hover .text-label {
+          opacity: 1;
+        }
+        .icon:hover .layer span:nth-child(1) {
+          opacity: 0.2;
+        }
+        .icon:hover .layer span:nth-child(2) {
+          opacity: 0.4;
+          transform: translate(5px, -5px);
+        }
+        .icon:hover .layer span:nth-child(3) {
+          opacity: 0.6;
+          transform: translate(10px, -10px);
+        }
+        .icon:hover .layer span:nth-child(4) {
+          opacity: 0.8;
+          transform: translate(15px, -15px);
+        }
+        .icon:hover .layer span:nth-child(5) {
+          opacity: 1;
+          transform: translate(20px, -20px);
+        }
+      `}</style>
+    </div>
+  );
+};
+
 const CustomButtons = {
   DownloadButton,
+  DiscordButton,
   GitHubButton
 };
 
