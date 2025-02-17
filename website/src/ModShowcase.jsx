@@ -1,14 +1,46 @@
-import React from 'react';
-import { Download } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
 import GradientCustomizer from './components/GradientCustomizer';
-import DownloadButton from './components/DownloadButton';
+import CustomButtons from './components/CustomButtons';
 import InteractiveCard from './components/InteractiveCard';
+import LoadingSpinner from './components/LoadingSpinner';
 import playerImage from './assets/TSM_Player.png';
 import progressionImage from './assets/TSM_Progression.png';
 import dyesImage from './assets/TSM_Dyes.png';
 import worldImage from './assets/TSM_World.png';
 
+import 'ldrs/trefoil';
+
 const ModShowcase = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const imagesToLoad = [playerImage, progressionImage, dyesImage, worldImage];
+    let loadedImages = 0;
+
+    const imageLoadHandler = () => {
+      loadedImages++;
+      if (loadedImages === imagesToLoad.length) {
+        setIsLoading(false);
+      }
+    };
+
+    // Create image objects to track loading
+    imagesToLoad.forEach(src => {
+      const img = new Image();
+      img.onload = imageLoadHandler;
+      img.onerror = imageLoadHandler; // Count errors as loaded to prevent hanging
+      img.src = src;
+    });
+
+    // If all images are already cached, set loading to false
+    if (imagesToLoad.every(src => {
+      const img = new Image();
+      return img.complete;
+    })) {
+      setIsLoading(false);
+    }
+  }, []);
+
   const features = [
     {
       title: "Player Controls & Movement",
@@ -34,6 +66,7 @@ const ModShowcase = () => {
 
   return (
     <div className="min-h-[100dvh] bg-gradient-to-b from-blue-950 via-purple-900 to-black text-white">
+      <LoadingSpinner isLoading={isLoading} />
       <div className="min-h-screen flex flex-col">
         {/* Enhanced Sparkle Background */}
         <div className="fixed inset-0 pointer-events-none overflow-hidden">
@@ -93,7 +126,8 @@ const ModShowcase = () => {
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 mb-6 sm:mb-8 md:mb-12 max-w-3xl mx-auto px-4">
                 An all-in-one mod menu for Sky: CoTL
               </p>
-              <DownloadButton />
+              <CustomButtons.DownloadButton />
+              <CustomButtons.GitHubButton stars={64} />
             </div>
           </div>
         </header>
