@@ -1,7 +1,12 @@
-import React from 'react';
-import 'ldrs/trefoil';
+import React, { useEffect } from 'react';
+import { trefoil } from 'ldrs';
 
 const LoadingSpinner = ({ isLoading }) => {
+  useEffect(() => {
+    // Register the custom element
+    trefoil.register();
+  }, []);
+
   if (!isLoading) return null;
 
   return (
