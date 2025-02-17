@@ -141,8 +141,13 @@ const ModShowcase = () => {
           <p className="text-xs sm:text-sm">© 2025 That Sky Mod. Not affiliated with thatgamecompany.</p>
         </footer>
 
-        {/* Gradient Customizer */}
-        <GradientCustomizer />
+        {/* Controls */}
+        <div className="fixed bottom-4 right-4 z-50 flex flex-row-reverse gap-4">
+          <GradientCustomizer />
+          <div className="h-14">
+            <CustomButtons.DiscordButton />
+          </div>
+        </div>
       </div>
     </div>
   );
