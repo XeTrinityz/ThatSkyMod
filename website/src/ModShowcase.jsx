@@ -8,37 +8,15 @@ import progressionImage from './assets/TSM_Progression.png';
 import dyesImage from './assets/TSM_Dyes.png';
 import worldImage from './assets/TSM_World.png';
 
-import 'ldrs/trefoil';
-
 const ModShowcase = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const imagesToLoad = [playerImage, progressionImage, dyesImage, worldImage];
-    let loadedImages = 0;
-
-    const imageLoadHandler = () => {
-      loadedImages++;
-      if (loadedImages === imagesToLoad.length) {
-        setIsLoading(false);
-      }
-    };
-
-    // Create image objects to track loading
-    imagesToLoad.forEach(src => {
-      const img = new Image();
-      img.onload = imageLoadHandler;
-      img.onerror = imageLoadHandler; // Count errors as loaded to prevent hanging
-      img.src = src;
-    });
-
-    // If all images are already cached, set loading to false
-    if (imagesToLoad.every(src => {
-      const img = new Image();
-      return img.complete;
-    })) {
+    const timer = setTimeout(() => {
       setIsLoading(false);
-    }
+    }, 800);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const features = [
