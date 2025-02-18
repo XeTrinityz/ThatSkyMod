@@ -84,7 +84,7 @@ const CommunityGallery = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400 mb-4">
-            Community Gallery
+            Community Creations
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Explore and download community-created content for That Sky Mod
@@ -100,7 +100,7 @@ const CommunityGallery = () => {
                 <div className="relative bg-gray-900 rounded-xl">
                   <input
                     type="text"
-                    placeholder="Search gallery..."
+                    placeholder="Search creations..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     className="w-full bg-transparent text-white px-12 py-4 focus:outline-none"
