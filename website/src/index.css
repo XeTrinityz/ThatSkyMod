@@ -25,7 +25,7 @@
   }
 }
 
-@keyframes sparkleFloat0 { /* Repeat for 0-149 */ 
+@keyframes sparkleFloat0 {
   0%, 100% {
     transform: translate(0, 0) rotate(0deg);
   }
@@ -60,7 +60,7 @@ body {
 }
 
 html, body {
-  background-color: black; /* Just as a fallback */
+  background-color: black;
   min-height: 100dvh;
 }
 

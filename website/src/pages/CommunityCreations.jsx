@@ -42,15 +42,15 @@ const CommunityGallery = () => {
       tags: ["theme"]
     },
     {
-        id: 5,
-        title: "Vietnamese Translation",
-        author: "Havier",
-        category: "translations",
-        description: "Complete Vietnamese translation for all mod features",
-        previewImage: "Translation.png",
-        downloadUrl: "resources/Vietnamese.json",
-        tags: ["translation", "vietnamese"]
-      },
+      id: 4,
+      title: "Vietnamese Translation",
+      author: "Havier",
+      category: "translations",
+      description: "Complete Vietnamese translation for all mod features",
+      previewImage: "Translation.png",
+      downloadUrl: "resources/Vietnamese.json",
+      tags: ["translation", "vietnamese"]
+    },
   ];
 
   const categories = [
