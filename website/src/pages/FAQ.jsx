@@ -17,7 +17,7 @@ const FAQPage = () => {
     },
     {
       question: "Do I need to pay for the mod?",
-      answer: "No, That Sky Mod is completely free and. However, if you'd like to support development, you can contribute to the developer via Crypto or Discord Nitro."
+      answer: "No, That Sky Mod is completely free. However, if you'd like to support development, you can contribute to the developer via Crypto or Discord Nitro."
     }
   ];
 
@@ -36,7 +36,7 @@ const FAQPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-950 via-purple-900 to-black text-white">
       <div className="max-w-4xl mx-auto px-4 py-20">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+      <h1 className="text-4xl sm:text-5xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400 py-2 leading-normal">
           Frequently Asked Questions
         </h1>
         
