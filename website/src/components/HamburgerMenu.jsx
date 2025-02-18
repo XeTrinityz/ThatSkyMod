@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const HamburgerMenu = ({ isOpen, toggleMenu }) => {
   return (
     <>
-      {/* Hamburger Button - Highest z-index */}
+      {/* Hamburger Button*/}
       <label 
         className={`fixed top-6 ${isOpen ? 'left-[276px]' : 'left-6'} w-10 h-8 block cursor-pointer z-[60] transition-all duration-300`}
         onClick={(e) => {
@@ -32,7 +32,7 @@ const HamburgerMenu = ({ isOpen, toggleMenu }) => {
         </div>
       </label>
 
-      {/* Overlay - Lowest z-index */}
+      {/* Overlay*/}
       {isOpen && (
         <div 
           className="fixed inset-0 bg-black/50 z-40"
@@ -40,7 +40,7 @@ const HamburgerMenu = ({ isOpen, toggleMenu }) => {
         />
       )}
 
-      {/* Menu Panel - Middle z-index */}
+      {/* Menu Panel*/}
       <div 
         className={`fixed top-0 left-0 h-screen w-72 bg-gray-900/95 backdrop-blur-sm transform transition-transform duration-300 ease-in-out z-50 ${
           isOpen ? 'translate-x-0' : '-translate-x-full'

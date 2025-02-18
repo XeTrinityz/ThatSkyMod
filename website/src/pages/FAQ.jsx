@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import GradientCustomizer from '../components/GradientCustomizer';
+import CustomButtons from '../components/CustomButtons';
 
 const FAQPage = () => {
   const faqs = [
@@ -71,6 +73,18 @@ const FAQPage = () => {
               </div>
             </div>
           ))}
+        </div>
+        {/* Footer */}
+        <footer className="py-6 sm:py-8 text-center text-gray-400 mt-auto">
+          <p className="text-xs sm:text-sm">© 2025 That Sky Mod. Not affiliated with thatgamecompany.</p>
+        </footer>
+
+        {/* Controls */}
+        <div className="fixed bottom-4 right-4 z-50 flex flex-row-reverse gap-4">
+          <GradientCustomizer />
+          <div className="h-14">
+            <CustomButtons.DiscordButton />
+          </div>
         </div>
       </div>
     </div>

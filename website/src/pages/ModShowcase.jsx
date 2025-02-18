@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import GradientCustomizer from '../components/GradientCustomizer';
 import CustomButtons from '../components/CustomButtons';
 import InteractiveCard from '../components/InteractiveCard';
-import LoadingSpinner from '../components/LoadingSpinner';
 import playerImage from '../assets/TSM_Player.png';
 import progressionImage from '../assets/TSM_Progression.png';
 import dyesImage from '../assets/TSM_Dyes.png';

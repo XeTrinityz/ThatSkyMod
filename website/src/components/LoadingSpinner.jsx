@@ -3,7 +3,6 @@ import { trefoil } from 'ldrs';
 
 const LoadingSpinner = ({ isLoading }) => {
   useEffect(() => {
-    // Register the custom element
     trefoil.register();
   }, []);
 
