@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import GradientCustomizer from './components/GradientCustomizer';
-import CustomButtons from './components/CustomButtons';
-import InteractiveCard from './components/InteractiveCard';
-import LoadingSpinner from './components/LoadingSpinner';
-import playerImage from './assets/TSM_Player.png';
-import progressionImage from './assets/TSM_Progression.png';
-import dyesImage from './assets/TSM_Dyes.png';
-import worldImage from './assets/TSM_World.png';
+import GradientCustomizer from '../components/GradientCustomizer';
+import CustomButtons from '../components/CustomButtons';
+import InteractiveCard from '../components/InteractiveCard';
+import LoadingSpinner from '../components/LoadingSpinner';
+import playerImage from '../assets/TSM_Player.png';
+import progressionImage from '../assets/TSM_Progression.png';
+import dyesImage from '../assets/TSM_Dyes.png';
+import worldImage from '../assets/TSM_World.png';
 
 const ModShowcase = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -44,7 +44,6 @@ const ModShowcase = () => {
 
   return (
     <div className="min-h-[100dvh] bg-gradient-to-b from-blue-950 via-purple-900 to-black text-white">
-      <LoadingSpinner isLoading={isLoading} />
       <div className="min-h-screen flex flex-col">
         {/* Enhanced Sparkle Background */}
         <div className="fixed inset-0 pointer-events-none overflow-hidden">
