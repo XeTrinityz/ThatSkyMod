@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ModShowcase from './pages/ModShowcase'
-import FAQPage from './pages/faq'
+import FAQPage from './pages/FAQ'
+import CommunityGallery from './pages/CommunityGallery'
 import HamburgerMenu from './components/HamburgerMenu'
 import './index.css'
 
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<ModShowcase />} />
         <Route path="/faq" element={<FAQPage />} />
+        <Route path="/gallery" element={<CommunityGallery />} />
       </Routes>
     </Router>
   )

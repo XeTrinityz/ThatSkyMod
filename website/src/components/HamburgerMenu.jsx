@@ -71,10 +71,25 @@ const HamburgerMenu = ({ isOpen, toggleMenu }) => {
             </Link>
             
             <Link 
+              to="/gallery" 
+              className="block relative group py-3 px-4"
+              onClick={toggleMenu}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300 rounded-lg" />
+              <div className="relative flex items-center">
+                <span className="text-xl font-medium text-white group-hover:translate-x-2 transition-transform duration-300">
+                  Gallery
+                </span>
+                <div className="absolute left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 group-hover:w-full transition-all duration-300 -bottom-1 opacity-0 group-hover:opacity-100" />
+              </div>
+            </Link>
+            
+            <Link 
               to="/faq" 
               className="block relative group py-3 px-4"
               onClick={toggleMenu}
             >
+                
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300 rounded-lg" />
               <div className="relative flex items-center">
                 <span className="text-xl font-medium text-white group-hover:translate-x-2 transition-transform duration-300">
