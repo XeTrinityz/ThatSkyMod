@@ -6,8 +6,11 @@ export default defineConfig({
   base: '/ThatSkyMod/',
   build: {
     outDir: 'dist',
-  },
-  server: {
-    historyApiFallback: true,
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        '404': './404.html'
+      }
+    }
   },
 })
