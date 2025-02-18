@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ModShowcase from './pages/ModShowcase'
 import FAQPage from './pages/FAQ'
 import HamburgerMenu from './components/HamburgerMenu'
