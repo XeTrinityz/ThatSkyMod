@@ -81,13 +81,13 @@ const CommunityGallery = () => {
   };
 
   return (
-    <div className="min-h-screen p-6 bg-gradient-to-b from-blue-950 via-purple-900 to-black">
+    <div className="min-h-screen p-20 bg-gradient-to-b from-blue-950 via-purple-900 to-black">
       <div className="max-w-[150rem] mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400 mb-4">
+          <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400 mb-4">
             Community Creations
-          </h2>
+          </h1>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Explore and download community-created content for That Sky Mod
           </p>
