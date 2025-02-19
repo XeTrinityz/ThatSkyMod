@@ -4,35 +4,7 @@ import { Link } from 'react-router-dom';
 const HamburgerMenu = ({ isOpen, toggleMenu }) => {
   return (
     <>
-      {/* Hamburger Button*/}
-      <label 
-        className={`fixed top-6 ${isOpen ? 'left-[276px]' : 'left-6'} w-10 h-8 block cursor-pointer z-[60] transition-all duration-300`}
-        onClick={(e) => {
-          e.preventDefault();
-          e.stopPropagation();
-          toggleMenu();
-        }}
-      >
-        <input 
-          type="checkbox" 
-          className="hidden" 
-          checked={isOpen}
-          readOnly
-        />
-        <div className="relative w-full h-full flex flex-col justify-center gap-2">
-          <div className={`h-[3px] w-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-300 ${
-            isOpen ? 'rotate-45 translate-y-[11px]' : ''
-          }`} />
-          <div className={`h-[3px] w-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-300 ${
-            isOpen ? 'opacity-0' : ''
-          }`} />
-          <div className={`h-[3px] w-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-300 ${
-            isOpen ? '-rotate-45 -translate-y-[11px]' : ''
-          }`} />
-        </div>
-      </label>
-
-      {/* Overlay*/}
+      {/* Overlay */}
       {isOpen && (
         <div 
           className="fixed inset-0 bg-black/50 z-40"
@@ -40,12 +12,42 @@ const HamburgerMenu = ({ isOpen, toggleMenu }) => {
         />
       )}
 
-      {/* Menu Panel*/}
+      {/* Menu Panel */}
       <div 
         className={`fixed top-0 left-0 h-screen w-72 bg-gray-900/95 backdrop-blur-sm transform transition-transform duration-300 ease-in-out z-50 ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
+        {/* Hamburger Button*/}
+        <div className="absolute top-1 right-1">
+          <label 
+            className="w-10 h-8 block cursor-pointer transition-all duration-300 transform scale-55"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              toggleMenu();
+            }}
+          >
+            <input 
+              type="checkbox" 
+              className="hidden" 
+              checked={isOpen}
+              readOnly
+            />
+            <div className="relative w-full h-full flex flex-col justify-center gap-2">
+              <div className={`h-[3px] w-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-300 ${
+                isOpen ? 'rotate-45 translate-y-[11px]' : ''
+              }`} />
+              <div className={`h-[3px] w-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-300 ${
+                isOpen ? 'opacity-0' : ''
+              }`} />
+              <div className={`h-[3px] w-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-300 ${
+                isOpen ? '-rotate-45 -translate-y-[11px]' : ''
+              }`} />
+            </div>
+          </label>
+        </div>
+
         <div className="flex flex-col h-full">
           {/* Header */}
           <div className="p-6 pt-8">
@@ -89,7 +91,6 @@ const HamburgerMenu = ({ isOpen, toggleMenu }) => {
               className="block relative group py-3 px-4"
               onClick={toggleMenu}
             >
-                
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300 rounded-lg" />
               <div className="relative flex items-center">
                 <span className="text-xl font-medium text-white group-hover:translate-x-2 transition-transform duration-300">
@@ -108,6 +109,30 @@ const HamburgerMenu = ({ isOpen, toggleMenu }) => {
           </div>
         </div>
       </div>
+
+      {/* Closed Menu Button */}
+      {!isOpen && (
+        <label 
+          className="fixed top-6 left-6 w-10 h-8 block cursor-pointer z-[60] transition-all duration-300"
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleMenu();
+          }}
+        >
+          <input 
+            type="checkbox" 
+            className="hidden" 
+            checked={isOpen}
+            readOnly
+          />
+          <div className="relative w-full h-full flex flex-col justify-center gap-2">
+            <div className="h-[3px] w-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-300" />
+            <div className="h-[3px] w-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-300" />
+            <div className="h-[3px] w-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-300" />
+          </div>
+        </label>
+      )}
     </>
   );
 };

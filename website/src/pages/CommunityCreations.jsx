@@ -82,7 +82,7 @@ const CommunityGallery = () => {
 
   return (
     <div className="min-h-screen p-6 bg-gradient-to-b from-blue-950 via-purple-900 to-black">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[150rem] mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400 mb-4">
@@ -139,7 +139,7 @@ const CommunityGallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 relative">
           {filteredItems.map((item) => (
             <div
               key={item.id}
@@ -184,7 +184,7 @@ const CommunityGallery = () => {
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/50 backdrop-blur-sm">
                     <button
                         onClick={() => handleDownload(item.downloadUrl)}
-                        className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full text-white font-medium transform hover:scale-105 transition-transform cursor-pointer">
+                        className="px-10 py-5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full text-white font-large transform hover:scale-110 transition-transform cursor-pointer">
                         Download
                       </button>
                     </div>
@@ -194,6 +194,7 @@ const CommunityGallery = () => {
             </div>
           ))}
         </div>
+
         {/* Footer */}
         <footer className="py-6 sm:py-8 text-center text-gray-400 mt-auto">
           <p className="text-xs sm:text-sm">© 2025 That Sky Mod. Not affiliated with thatgamecompany.</p>
