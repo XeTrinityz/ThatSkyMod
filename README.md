@@ -8,6 +8,12 @@
   <p align="center">
     An all-in-one mod menu for Sky: CoTL
     <br />
+    <div align="center">
+      <a href="https://discord.gg/kjpGzTU9hH">
+        <img src="https://img.shields.io/discord/kjpGzTU9hH?color=7289da&logo=discord&logoColor=white&style=for-the-badge" alt="Discord">
+      </a>
+    </div>
+
   </p>
   <!-- SOFTWARE IMAGE -->
   <img src="https://i.ibb.co/DfC0zxXm/image.png" alt="TSM Menu">
@@ -22,24 +28,18 @@ TSM, or That Sky Mod, was created with the ultimate goal of being the only mod y
 
 </br>
 </br>
-
 <div align="center">
   
 ## Contributors
-
 ### Developer
 XeTrinityz
-
 ### Project Founder
 TheSR
-
 ### Development Contributions
 Lukas
-
 ### Community Contributions
 MikeyK </br>
 Samual Grey </br>
 k0ra </br>
 yxsj245
-
 </div>
