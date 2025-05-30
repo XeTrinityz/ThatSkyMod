@@ -10,7 +10,7 @@
     <br />
     <div align="center">
       <a href="https://discord.gg/kjpGzTU9hH">
-        <img src="https://img.shields.io/discord/kjpGzTU9hH?color=7289da&logo=discord&logoColor=white&style=for-the-badge" alt="Discord">
+        <img src="https://img.shields.io/discord/1247220592919314522?color=7289da&logo=discord&logoColor=white&style=for-the-badge" alt="Discord">
       </a>
     </div>
 
