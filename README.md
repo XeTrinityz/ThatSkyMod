@@ -37,9 +37,4 @@ XeTrinityz
 TheSR
 ### Development Contributions
 Lukas
-### Community Contributions
-MikeyK </br>
-Samual Grey </br>
-k0ra </br>
-yxsj245
 </div>
