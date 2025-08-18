@@ -20,11 +20,24 @@
 </div>
 
 ## About The Project
-TSM, or That Sky Mod, was created with the ultimate goal of being the only mod you will ever need while playing Sky. Our vision is to enhance the gaming experience by integrating a wide range of functionalities, all accessible through a user-friendly interface. We strive to make TSM a comprehensive toolkit that simplifies modding and provides endless customization options, enabling you to tailor your Sky experience to your preferences.
+
+TSM, or That Sky Mod, was created with the ultimate goal of being the only mod you will ever need while playing Sky. My vision is to enhance the gaming experience by integrating a comprehensive range of functionalities, all accessible through an intuitive mod menu interface. TSM is designed as a complete toolkit that gives players maximum freedom to enjoy the best aspects of Sky while minimizing tedious elements like grinding.
 
 ### Key Features:
-- **User-Friendly Interface:** Designed with simplicity and usability in mind, the TSM interface allows both novice and experienced users to easily access and configure various mod features.
-- **Comprehensive Functionality:** From gameplay enhancements to aesthetic modifications, TSM covers a wide spectrum of features to enrich your Sky experience.
+
+- **Complete Player Freedom:** TSM empowers you with extensive control over your gameplay experience, from invincibility and teleportation to automated systems that handle repetitive tasks.
+
+- **Combat & Survival Enhancements:** Features like invincibility and advanced movement options let you explore and play without limitations.
+
+- **Visual & Exploration Tools:** Dye ESP and other visual aids help you navigate and discover content more efficiently.
+
+- **Environment Control:** Take command of Sky's atmosphere with tools to adjust wind, rain, sun position, and other environmental elements to create your perfect ambiance.
+
+- **Automation Features:** Automated music playing and other time-saving functions reduce grinding and let you focus on enjoying the game.
+
+- **User-Friendly Interface:** The mod menu is designed for easy access and configuration, making all features readily available whether you're new to modding or an experienced user.
+
+TSM serves as your comprehensive mod menu solution, designed to maximize enjoyment while minimizing the frustrating aspects of the game.
 
 </br>
 </br>
