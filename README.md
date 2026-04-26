@@ -20,7 +20,7 @@
 
   </p>
   <!-- SOFTWARE IMAGE -->
-  <img src="https://i.ibb.co/S7R8YBK9/TSM.png" alt="TSM Menu">
+  <img src="https://i.ibb.co/ZRNYZcHM/image.png" alt="TSM Menu">
 </div>
 
 ## About The Project
