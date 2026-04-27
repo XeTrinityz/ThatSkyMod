@@ -3,7 +3,7 @@
   <!-- PROJECT LOGO -->
   <h1>That Sky Mod</h1>
   <a href="https://github.com/XeTrinityz/TSM-Installer">
-    <img src="https://i.ibb.co/qL5TS2q4/icon.png" alt="TSM Logo" width="80" height="80">
+    <img src="https://i.ibb.co/xts2Dphg/TSM-Dark.png" alt="TSM Logo" width="80" height="80">
   </a>
   <p align="center">
     An all-in-one mod menu for Sky: CoTL
