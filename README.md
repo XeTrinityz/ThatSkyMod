@@ -54,5 +54,16 @@ XeTrinityz
 TheSR
 ### Development Contributions
 Lukas
+</br>
 CanSysn
+</br>
+Vexadros
+</br>
+Gxost
+</br>
+Kiojeen
+</br>
+Mr Gatto
+</br>
+HugeFrog24
 </div>
