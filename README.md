@@ -55,8 +55,6 @@ TheSR
 ### Development Contributions
 Lukas
 </br>
-CanSysn
-</br>
 Vexadros
 </br>
 Gxost
